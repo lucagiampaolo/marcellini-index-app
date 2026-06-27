@@ -1,0 +1,62 @@
+{
+  "D1": {
+    "outcome": "Target_Gravi_5a",
+    "label": "Rischio strutturale 5a",
+    "soglia": 0.402,
+    "auc": 0.6689, "ci_lo": 0.6555, "ci_hi": 0.6811,
+    "sens": 77.5, "spec": 46.9, "ppv": 55.3, "npv": 71.1,
+    "n": 7190, "n_pos": 3302,
+    "invert": false,
+    "note": "Soglia Youden reale da N6_Youden_Completa.xlsx (rimpiazza mockup 0.473)"
+  },
+  "D2": {
+    "outcome": "TIR_target_3a",
+    "label": "Controllo metabolico 3a",
+    "soglia": 0.423,
+    "auc": 0.7204, "ci_lo": 0.7091, "ci_hi": 0.7328,
+    "sens": 61.4, "spec": 72.3, "ppv": 62.5, "npv": 71.4,
+    "n": 7856, "n_pos": 3372,
+    "invert": true,
+    "note": "p alta = in target = buono → invert=true per il radar"
+  },
+  "D3": {
+    "outcome": "Trans_MMG_6m",
+    "label": "Trasferibilità MMG ≥6m",
+    "soglia": 0.211,
+    "auc": 0.892, "ci_lo": 0.8851, "ci_hi": 0.8991,
+    "sens": 96.5, "spec": 72.8, "ppv": 53.9, "npv": 98.4,
+    "n": 7917, "n_pos": 1964,
+    "invert": true,
+    "note": "Soglia Youden reale (rimpiazza mockup 0.273). NPV 98.4%"
+  },
+  "Mort": {
+    "outcome": "Decesso_L_5a",
+    "label": "Rischio mortalità 5a",
+    "soglia": 0.111,
+    "auc": 0.8289, "ci_lo": 0.8156, "ci_hi": 0.8411,
+    "sens": 79.8, "spec": 69.8, "ppv": 28.1, "npv": 95.9,
+    "n": 7188, "n_pos": 927,
+    "invert": false,
+    "note": "Soglia Youden reale (rimpiazza mockup 0.134)"
+  },
+  "DCSI": {
+    "outcome": "DCSI_0to2_5a",
+    "label": "Progressione DCSI≥2 (5a)",
+    "soglia": 0.361,
+    "auc": 0.745, "ci_lo": 0.7249, "ci_hi": 0.764,
+    "sens": 62.4, "spec": 73.7, "ppv": 53.2, "npv": 80.4,
+    "n": 3061, "n_pos": 990,
+    "invert": false,
+    "note": "Solo DCSI_basale=0. Soglia Youden reale (rimpiazza mockup 0.327)"
+  },
+  "dDCSI": {
+    "outcome": "DeltaDCSI_gte2_5a",
+    "label": "ΔDCSI≥2 (5a, intera coorte)",
+    "soglia": 0.265,
+    "auc": 0.7252, "ci_lo": 0.7122, "ci_hi": 0.7381,
+    "sens": 73.2, "spec": 60.1, "ppv": 43.8, "npv": 84.1,
+    "n": 6261, "n_pos": 1864,
+    "invert": false,
+    "note": "Intera coorte (DCSI_basale<=10). Soglia Youden reale (rimpiazza mockup 0.291)"
+  }
+}

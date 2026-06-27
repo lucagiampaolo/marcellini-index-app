@@ -1,0 +1,27 @@
+{
+  "features": [
+    "EtaBasale",
+    "Sesso",
+    "EtaDiabeteMellito",
+    "HbA1cBasale",
+    "HbA1c_ER_target_basale",
+    "eGFR_basale",
+    "ASCVD_basale",
+    "TOD_ER_max_basale",
+    "DCSI_basale",
+    "DrugScore_basale",
+    "TerapiaRischioIpo",
+    "Insulina_multiniettiva_basale_trans"
+  ],
+  "n_features": 12,
+  "version": "V18",
+  "notes": {
+    "Sesso": "M=1, F=0",
+    "HbA1c_ER_target_basale": "1 se HbA1c entro target individualizzato ER 2017",
+    "ASCVD_basale": "1 se storia di cardiopatia/cerebrovasc./arteriopatia",
+    "TOD_ER_max_basale": "n. distretti TOD coinvolti (0-3)",
+    "DCSI_basale": "Punteggio DCSI totale a 7 distretti (0-13)",
+    "TerapiaRischioIpo": "1 se insulina OR sulfoniluree OR repaglinide",
+    "Insulina_multiniettiva_basale_trans": "1 se insulina basale AND rapida contemporaneamente"
+  }
+}
